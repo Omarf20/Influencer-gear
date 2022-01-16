@@ -44,6 +44,9 @@ body{
 .moto-detail{
     text-align: justify;
 }
+.fa-arrow-right{
+    padding-left: 9px;
+}
 .moto-img img{
     width: 475px;
     height: 267px;
@@ -53,9 +56,16 @@ body{
 }
 .button{
     background-color: rgb(255, 0, 128) ;
+    border: none;
     border-radius: 41px;
-    font-size: 18px;
     color: white;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 21px;
+    margin: 4px 2px;
+    cursor: pointer;
 }
 /* marketplace-tab */
 hr{
@@ -70,7 +80,10 @@ hr{
 }
 /* product-collection */
 .popular-products{
-    grid-template-columns: repeat(3, 1fr);
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    padding-left: 197px;
+    padding-right: 197px;
 }
 .title{
     text-align: center;
@@ -82,5 +95,45 @@ hr{
     font-weight: 400;
 }
 #tripod img{
-    border: 1px ;
+    border-radius: 5px;
+}
+.filled{
+    color: orange;
+}
+.empty{
+    font-weight: lighter;
+}
+.box{
+    box-shadow: ;
+}
+.product-bottom{
+    padding-left: 1144px;
+    color: rgb(255, 0, 128);
+}
+.anchor{
+    text-decoration: none;
+}
+footer{
+    background-color: #0A0826;
+    text-align: center;
+}
+.footer{
+    color: white;
+    font-size: 24px;
+    font-weight: 700;
+    padding-top: 50px;
+}
+.second-row{
+    font-size: 14px;
+    color:rgba(217, 219, 225, 1);
+}
+#padding{
+    padding-bottom: 50px;
+}
+/* media-queries */
+@media only screen and (max-width: 688px){
+    .popular-products{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
 }
